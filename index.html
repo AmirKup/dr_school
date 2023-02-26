@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg_style.css">
+    <title>Отправить заявку!</title>
+</head>
+<body>
+
+<form class="form" method="POST" action="https://formsubmit.co/kupzhassarov.amir@mail.ru">
+    <h1 class="form-title"><span>Написать нам</span></h1>
+    <input type="hidden" name="_captcha" value="false">
+    <label class="form-label">
+        <input name="login" class="form-field" minlength="3" maxlength="12" required type="text" placeholder="Логин">
+        <span class="form-error">Ошибка!</span>
+    </label>
+
+    <label class="form-label">
+        <input name="email" class="form-field" type="email" placeholder="Email" required>
+        <span class="form-error">Ошибка!</span>
+    </label>
+
+    <label class="form-label">
+        <textarea name="message" class="form-field" placeholder="Введите сообщение..." required></textarea>
+        <span class="form-error">Ошибка!</span>
+    </label>
+
+
+    <button class="form-btn" type="submit">Отправить</button>
+
+
+    <div class="form-right"></div>
+    <div class="form-left"></div>
+</form>
+
+</body>
+</html>
